@@ -40,7 +40,14 @@
         background-color: #ddd;
         font-size: 24px;
         text-align: center;
+        margin: 0 100px;
         margin-top: 85px;
+      }
+      @media (max-width: 720px) {
+        body {
+          margin: 0 20px;
+          font-size: 18px;
+        }
       }
       h1,
       h2,
@@ -55,9 +62,22 @@
       h1 {
         text-transform: uppercase;
       }
+      a {
+        color: #c0392b;
+        display: inline-block;
+        transition: transform .1s linear;
+      }
+      .info {
+        border: 3px solid #2f2c47;
+        border-radius: 8px;
+        padding: 5px;
+      }
+      a:hover {
+        transform: translate(5px, -5px);
+      }
       #countdown {
         line-height: 2em;
-        color: #2f2c47;
+        color: #c0392b;
         font-family: "Press Start 2P";
       }
     </style>
@@ -66,9 +86,7 @@
   <body>
     <div class="pure-g">
       <div class="pure-u-1">
-        <h1>Sjekk inn senere</h1>
-        <h2>Her kommer toppliste</h2>
-        <h2><a href="https://abakus.no/">Abakus.no</a></h2>
+        <h1>Abakus fadderuke</h1>
         <div id="countdown">
           <span class="days">00</span>&nbsp;<span class="timeRefDays"
             >dager</span
@@ -83,7 +101,22 @@
             >sekunder</span
           >
         </div>
-      </div>
+        <div class="info">
+          <h5>God sommer kjære 1. klassing og nye abakule</h5>
+          <p>Gratulerer med å ha kommet inn på en av de to beste linjene NTNU har å by på. Håper du
+            gleder deg til å komme i gang, for det gjør vi!🎉
+          </p>
+          <p>For at du skal få en best mulig start på oppholdet ditt i Trondheim og på NTNU arrangerer
+          vi en to-ukers fadderperiode til dere. Her blir det mye moro og en sjanse for deg til å bli
+          kjent med både Trondheim, NTNU, Abakus og medstudenter. Du kan lese mer om fadderperioden på
+          lenken under.</br><b>Oppmøtetidspunkt og sted kommer snart!</b>
+          </p>
+          <p>På denne siden kommer det til å komme info om Fadderperioden, samt resultater fra
+            faddercupen som dere vil bli introdusert for når dere kommer til Trondheim.🏆</p>
+          <p>Vi gleder oss masse til en fadderperiode med deg, håper du gjør det samme!</p>
+          <h4>Vi sees 10. august!!</h4>
+        </div>
+        <h2><a target="blank" rel="noreferrer noopener" href="https://abakus.no/">Abakus.no</a></h2>
     </div>
   </body>
   <script>
